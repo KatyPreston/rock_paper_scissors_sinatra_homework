@@ -3,7 +3,6 @@ require('sinatra/contrib/all')
 
 require_relative('models/game')
 
-
 get '/rock/:opponent_choice' do
   game = Game.new(params[:opponent_choice])
   @outcome = game.rock()
