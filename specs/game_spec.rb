@@ -28,4 +28,36 @@ class GameTest < Minitest::Test
     assert_equal("Not valid", @game4.rock())
   end
 
+  def test_paper__loses
+    assert_equal("You lose", @game2.paper())
+  end
+
+  def test_paper__wins
+    assert_equal("You win", @game1.paper())
+  end
+
+  def test_paper__draw
+    assert_equal("Draw", @game3.paper())
+  end
+
+  def test_paper__invalid
+    assert_equal("Not valid", @game4.paper())
+  end
+
+  def test_scissors__loses
+    assert_equal("You lose", @game3.scissors())
+  end
+
+  def test_scissors__wins
+    assert_equal("You win", @game2.scissors())
+  end
+
+  def test_scissors__draw
+    assert_equal("Draw", @game1.scissors())
+  end
+
+  def test_scissors__invalid
+    assert_equal("Not valid", @game4.scissors())
+  end
+
 end
