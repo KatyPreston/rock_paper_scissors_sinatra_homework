@@ -25,6 +25,6 @@ get '/' do
   erb(:home)
 end
 
-get '/about_us' do
-  erb(:about_us)
+get '/how_to_play' do
+  erb(:how_to_play)
 end

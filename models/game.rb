@@ -41,9 +41,9 @@ class Game
     end
   end
 
-  def self.computer_choice
-    choice = ["rock", "paper", "scissors"].sample
-    return choice
-  end
+  # def self.computer_choice
+  #   choice = ["rock", "paper", "scissors"].sample
+  #   return choice
+  # end
 
 end
