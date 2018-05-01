@@ -21,3 +21,11 @@ get '/paper/:opponent_choice' do
   @outcome = game.paper()
   erb( :result )
 end
+
+get '/' do
+  erb(:home)
+end
+
+get '/about_us' do
+  erb(:about_us)
+end
