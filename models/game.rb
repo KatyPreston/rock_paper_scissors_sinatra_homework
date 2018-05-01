@@ -2,6 +2,7 @@ class Game
 
   def initialize(opponent_choice)
     @opponent_choice = opponent_choice
+
   end
 
   def rock()
@@ -39,5 +40,10 @@ class Game
       return "Not valid"
     end
   end
-  
+
+  def self.computer_choice
+    choice = ["rock", "paper", "scissors"].sample
+    return choice
+  end
+
 end
